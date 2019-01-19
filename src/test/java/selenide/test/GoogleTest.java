@@ -16,11 +16,11 @@ public class GoogleTest extends ExternalResource{
 
     @Before
     public void BrowserStrategy() {
-        // можно задать драйвер и закоментированым кодом,  смесь селениума с селенидом=/
+        
         System.setProperty("webdriver.gecko.driver", "src\\test\\resources\\geckodriver.exe");
         System.setProperty("selenide.browser","firefox"); // firefox, chrome,htmlunit,opera,ie,phantomjs.
 //        WebDriver driver = new FirefoxDriver();
-//        WebDriverRunner.setWebDriver(driver); // это строка возвращает селениду настройки нашего драйвера.
+//        WebDriverRunner.setWebDriver(driver); 
     }
 
     @Rule
